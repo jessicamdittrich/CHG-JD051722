@@ -1,0 +1,51 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4844533, 2022-05-13T18:22:45-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Lounge-Italic by Typomancer
+ * URL: https://www.myfonts.com/fonts/typomancer/lounge/italic/
+ * 
+ * Webfont: Lounge-Bold by Typomancer
+ * URL: https://www.myfonts.com/fonts/typomancer/lounge/bold/
+ * 
+ * Webfont: Lounge by Typomancer
+ * URL: https://www.myfonts.com/fonts/typomancer/lounge/regular/
+ * 
+ * 
+ * Webfonts copyright: Copyright (c) 2012 by Typomancer. All rights reserved.
+ * 
+ * © 2022 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/49ebf5");
+  
+@font-face {
+  font-family: "Lounge";
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  src: url('webFonts/Lounge/normal_normal_bold.woff2') format('woff2'), url('webFonts/Lounge/normal_normal_bold.woff') format('woff');
+}
+@font-face {
+  font-family: "Lounge";
+  font-style: italic;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url('webFonts/Lounge/italic_normal_normal.woff2') format('woff2'), url('webFonts/Lounge/italic_normal_normal.woff') format('woff');
+}
+@font-face {
+  font-family: "Lounge";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url('webFonts/Lounge/normal_normal_normal.woff2') format('woff2'), url('webFonts/Lounge/normal_normal_normal.woff') format('woff');
+}
+
