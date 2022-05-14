@@ -26,24 +26,36 @@
     </div>
 
     <main>
-        <div id="about">
+        <section id="about">
             <img src="assets/images/title-about.png" alt="About Title Script" />
             <div>
+                <img src="assets/images/jessica-photo.jpg" id="photo-jess" alt="Photo of Jessica" />
                 <p>Hi i'm Jessica!</p>
                 <p>Cupcake ipsum dolor sit amet. Apple pie cheesecake macaroon sweet sweet roll. Soufflé bear claw bonbon cookie soufflé bear claw dragée jujubes. Chocolate cake halvah jelly beans shortbread pudding macaroon croissant sesame snaps. Pie macaroon candy jujubes chocolate danish cookie sweet roll jelly beans. Shortbread cake sweet oat cake danish cookie lemon drops. Dragée sweet icing candy dragée.</p>
                 <p>Muffin cheesecake I love fruitcake jelly-o pie donut. I love I love shortbread I love jelly beans danish chocolate cake I love. Apple pie I love shortbread chocolate cake bonbon cookie I love oat cake.</p>
             </div>
-        </div>
-        <div id="work">
+        </section>
+        <section id="work">
             <img src="assets/images/title-work.png" alt="Work Title Script" />
-            <div class="work-content"></div>
-        </div>
-        <div id="contact">
+            <div class="work-content">
+                <div id="main-work">main</div>
+                <div class="all-work">other</div>
+                <div class="all-work">other</div>
+                <div class="all-work">other</div>
+                <div class="all-work">other</div>
+                <div class="all-work">other</div>
+                <div class="all-work">other</div>
+            </div>
+        </section>
+        <section id="contact">
             <img src="assets/images/title-contact.png" alt="Contact Title Script" />
             <form>
-
+                <input type="text" id="name" name="name" placeholder="What's your full name?" required>
+                <input type="email" id="email" name="email" placeholder="What email can I reach you at?" required>
+                <textarea id="description" name="description" placeholder="What would you like to chat about?"></textarea>
+                <button type="submit" class="submit" name="submit" value="bar">Let's Chat!</button>
             </form>
-        </div>
+        </section>
     </main>
 </body>
 </html>

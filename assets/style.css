@@ -10,7 +10,8 @@ html, body {
    max-width: 100%;
    overflow-x: hidden;
    background-color: var(--ltgrey);
-   font-family:"Lounge";
+   font-family: "Lounge";
+   scroll-behavior: smooth;
 }
 
 /* FIXED NAV */
@@ -61,23 +62,84 @@ main {
     right: 0;
 }
 
-main div {
+main section {
     border: 5px solid black;
     text-align: center;
 }
 
 main img {
     max-width: 500px;
+    margin-bottom: 25px;
 }
 
 /* CONTENT - ABOUT */
 
-#about {
-    
+#about #photo-jess {
+    border: 3px solid var(--dkgrey);
+    border-radius: 100px;
+    max-height: 200px;
+    margin: auto;
 }
 
-#about div {
+#about div, #contact form {
     width: 50%;
     margin: auto;
+    text-align: center;
+}
+
+#about div p {
     text-align: justify;
+}
+
+/* CONTENT - WORK */
+
+#work .work-content {
+    margin: auto;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.work-content #main-work {
+    flex: 1 0 100%;
+}
+
+.work-content .all-work {
+    border: 1px solid black;
+    flex: 1 0 30%;
+}
+
+/* CONTENT - CONTACT */
+
+#contact form input, #contact textarea, #contact form button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: var(--yellow);
+    color: var(--dkgrey);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 0;
+    text-align:center;
+}
+
+#contact textarea {
+    height: 100px;
+    font-family: "Lounge";
+    overflow: hidden;
+    resize: none;
+    padding-top: 3px;
+}
+
+#contact form input::placeholder, #contact textarea::placeholder {
+    color: var(--dkgrey);
+}
+
+#contact form input:focus, #contact textarea:focus, #contact form button:hover {
+    background-color: var(--dkgrey);
+    color: var(--yellow);
 }
