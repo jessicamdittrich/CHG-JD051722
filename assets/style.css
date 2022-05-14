@@ -10,7 +10,7 @@ html, body {
    max-width: 100%;
    overflow-x: hidden;
    background-color: var(--ltgrey);
-   font-family: "Lounge";
+   font-family: "Lounge", sans-serif;
    scroll-behavior: smooth;
    cursor: url(images/cursor-dkgrey.png), pointer;
 }
@@ -46,12 +46,12 @@ html, body {
     text-transform: uppercase;
     color: var(--yellow);
     text-decoration: none;
-    letter-spacing: 3px;
-    line-height: 40px;
-    font-size: 16px;
+    letter-spacing: 4px;
+    line-height: 30px;
+    font-size: 20px;
 }
 
-#navigation a:hover {
+#navigation a:hover, #navigation #social img:hover {
     color: var(--dkgrey);
     cursor: url(images/cursor-ltgrey.png), pointer;
 }
@@ -71,16 +71,52 @@ html, body {
 
 /* LANDING IMAGE */
 
-#landing-img {
+#landing-page {
     position: absolute;
     background-color: var(--yellow);
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
+    text-align: right;
+    display: grid;
 }
 
-/* CONTENT */
+#landing-page p {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 80px;
+    font-family: "Lounge", sans-serif;
+    font-weight: bold;
+    margin: auto 25px;
+    color: var(--dkgrey);
+    width: 22ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2s steps(13) infinite alternate, blink 800ms steps(13) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+         width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+      
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+/* CONTENT - ALL */
 
 main {
     position: absolute;
@@ -149,6 +185,10 @@ main img {
 
 /* CONTENT - CONTACT */
 
+#contact form {
+    padding-bottom: 150px;
+}
+
 #contact form:hover {
     cursor: url(images/cursor-ltgrey.png), pointer;
 }
@@ -165,13 +205,13 @@ main img {
     font-weight: bold;
     padding: 0;
     text-align:center;
-    font-family: "Lounge";
+    font-family: "Lounge", sans-serif;
     font-weight: normal;
 }
 
 #contact textarea {
     height: 100px;
-    font-family: "Lounge";
+    font-family: "Lounge", sans-serif;
     overflow: hidden;
     resize: none;
     padding-top: 5px;
@@ -179,7 +219,7 @@ main img {
 
 #contact form input::placeholder, #contact textarea::placeholder, #contact form button {
     color: var(--dkgrey);
-    font-family: "Lounge";
+    font-family: "Lounge", sans-serif;
     font-weight: normal;
 }
 
