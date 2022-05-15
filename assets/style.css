@@ -68,7 +68,7 @@ html, body {
     margin: 0px 5px 0px 0px;
 }
 
-/* LANDING IMAGE */
+/* LANDING PAGE */
 
 #landing-page {
     position: absolute;
@@ -79,6 +79,17 @@ html, body {
     left: 0;
     text-align: right;
     display: grid;
+    overflow: hidden;
+}
+
+#landing-page video {
+    position: absolute;
+    object-fit: fill;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 1;
 }
 
 /* CONTENT - ALL */
@@ -89,6 +100,7 @@ main {
     height: 100%;
     width: 75%;
     right: 0;
+    z-index: 100;
 }
 
 main section {
