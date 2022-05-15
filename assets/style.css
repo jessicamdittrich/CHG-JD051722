@@ -24,7 +24,7 @@ html, body {
     width: 300px;
     background-color: var(--dkgrey);
     padding: 10px;
-    z-index:1;
+    z-index: 99999;
 }
 
 #navigation:hover {
@@ -52,7 +52,6 @@ html, body {
 }
 
 #navigation a:hover, #navigation #social img:hover {
-    color: var(--dkgrey);
     cursor: url(images/cursor-ltgrey.png), pointer;
 }
 
@@ -82,40 +81,6 @@ html, body {
     display: grid;
 }
 
-#landing-page p {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    font-size: 80px;
-    font-family: "Lounge", sans-serif;
-    font-weight: bold;
-    margin: auto 25px;
-    color: var(--dkgrey);
-    width: 22ch;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typewriter 2s steps(13) infinite alternate, blink 800ms steps(13) infinite normal;
-}
-
-@keyframes typewriter {
-    from {
-         width: 0%;
-    }
-    to {
-        width: 50%;
-    }
-      
-}
-
-@keyframes blink {
-    from {
-        border-color: black;
-    }
-    to {
-        border-color: transparent;
-    }
-}
-
 /* CONTENT - ALL */
 
 main {
@@ -134,7 +99,6 @@ main img {
     max-width: 500px;
     margin-bottom: 25px;
 }
-
 
 /* CONTENT - ABOUT */
 
@@ -171,17 +135,57 @@ main img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border: 1px solid black;
 }
 
-.work-content #main-work {
-    flex: 1 0 100%;
+#work .work-content a {
+    /*border: 3px solid black;*/
+    background-color: var(--yellow);
+    height: 250px;
+    color: var(--dkgrey);
+    text-decoration: none;
+}
+
+#work .work-content a:hover {
+    background-color: var(--dkgrey);
+    color: var(--yellow);
+    cursor: url(images/cursor-ltgrey.png), pointer;
+}
+
+#work .work-content h2 {
+    margin: 25px 0px 0px 0px;
+    padding: 0px;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: "Lounge", sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+#work .work-content h3 {
+    margin: 5px 0px 0px 0px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#work .work-content #main-work {
+    flex: 1 0 97%;
+    margin: 1% 1%;
 }
 
 .work-content .all-work {
-    border: 1px solid black;
     flex: 1 0 30%;
+    margin: 1% 1%;
 }
+
+#main-work:hover::after, .all-work:hover::after {
+    content: "click me!";
+    background-color: var(--yellow);
+    color: var(--dkgrey);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 
 /* CONTENT - CONTACT */
 
