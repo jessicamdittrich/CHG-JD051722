@@ -61,7 +61,7 @@ html, body {
 }
 
 #navigation #social li{
-    display:inline;
+    display: inline;
 }
 
 #navigation #social img {
@@ -207,17 +207,24 @@ main img {
     margin: 1% 1%;
 }
 
-/*#main-work {
-    background-image: url("images/jessica-photo.jpg");
-    background-size: cover;
-}*/
-
 #main-work:hover::after, .all-work:hover::after {
     content: "click me!";
     background-color: var(--yellow);
     color: var(--dkgrey);
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+/* CONTENT - WORK - ADDING IMAGES */
+
+/*#main-work {
+    background-image: url("images/jessica-photo.jpg");
+    background-size: cover;
+}*/
+
+#the-usual {
+    background-image: url("images/work-theusual.jpg");
+    background-size: cover;
 }
 
 
@@ -256,7 +263,7 @@ main img {
     font-family: var(--fonts);
     overflow: hidden;
     resize: none;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 #contact form input::placeholder, #contact textarea::placeholder, #contact form button {
@@ -311,16 +318,12 @@ footer p {
 
     /* TABLETS */
     @media screen and (max-width: 992px) {
-        
-    }
-    
-    /* LARGE SMARTPHONES */
-    @media screen and (max-width: 768px) {
         #navigation {
             top: 0px;
             left: 0px;
             width: 100%;
-            height: 100px;
+            height: 150px;
+            
         }
 
         #navigation img {
@@ -328,7 +331,7 @@ footer p {
             left: 20px;
             top: 10px;
             margin: auto;
-            max-height: 100px;
+            max-height: 150px;
             display: inline;
         }
 
@@ -340,8 +343,14 @@ footer p {
             text-align: right;
         }
 
+        #navigation nav li {
+            margin-bottom: 20px;
+        }
+
         #navigation a {
             font-weight: bold;
+            font-size: 24px;
+
         }
 
         #navigation #pages {
@@ -373,7 +382,7 @@ footer p {
 
         #about, #work, #contact {
             margin-top: 0px;
-            padding: 50px 0;
+            padding: 200px 0;
             border-top: 5px solid var(--dkgrey);
         }
 
@@ -388,7 +397,7 @@ footer p {
         }
 
         #contact form {
-            padding-bottom: 50px;
+            padding-bottom: 75px;
         }
 
         footer {
@@ -396,7 +405,21 @@ footer p {
         }
     }
     
-    /* SMALL SMARTPHONES */
-    @media screen and (max-width: 576px) {
-        
+    /* LARGE SMARTPHONES */
+    @media screen and (max-width: 768px) {
+        #navigation {
+            height: 100px;
+        }
+
+        #navigation img {
+            max-height: 100px;
+        }
+
+        #navigation nav li {
+            margin-bottom: 2px;
+        }
+
+        #about, #work, #contact {
+            padding: 125px 0;
+        }
     }
