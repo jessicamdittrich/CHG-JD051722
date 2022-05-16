@@ -227,6 +227,10 @@ main img {
     background-size: cover;
 }
 
+#jeremy-matheson {
+    background-image: url("images/work-jeremymatheson.jpg");
+    background-size: cover;
+}
 
 /* CONTENT - CONTACT */
 
