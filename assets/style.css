@@ -95,6 +95,17 @@ html, body {
     z-index: 1;
 }
 
+#landing-page p {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    margin: 0;
+    font-family: var(--fonts);
+    font-size: 10px;
+    letter-spacing: 1px;
+    z-index: 101;
+}
+
 /* CONTENT - ALL */
 
 main {
